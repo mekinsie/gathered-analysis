@@ -1,4 +1,4 @@
-<h1><%= @survey.name %></h1>
+<h1><%= @survey.title %></h1>
 
 <% if @survey.questions.any? %>
   <h4>Here are the questions for this survey:</h4>
@@ -6,7 +6,7 @@
   <% @survey.questions.each do |question| %>
     <ul>
       <li>
-        <%= link_to question.name, survey_question_path(@survey, question) %>
+        <%= link_to question.question, survey_question_path(@survey, question) %>
       </li>
     </ul>
   <% end %>

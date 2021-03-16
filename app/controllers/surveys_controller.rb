@@ -39,6 +39,7 @@ class SurveysController < ApplicationController
     # Code for updating an survey goes here.
     @survey = Survey.find([params[:id]])
     if @survey.update(survey_params)
+      flash[:notice] = "survey successfully updated!"
       redirect_to surveys_path
     else
       render :edit
