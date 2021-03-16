@@ -2,35 +2,53 @@ $darkerblue-color: rgb(101, 161, 196);
 $text-color: rgb(79, 131, 161);
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 body {
-  background: linear-gradient( white, rgb(176, 199, 214)) fixed;
+  background: linear-gradient( white, rgb(181, 200, 212)) fixed;
   background-repeat: no-repeat;
   font-family: 'Syne Mono', monospace;
 }
 
+
+ul {
+  list-style-type: none;
+}
+
 .box {
   margin: 50px;
+  text-align: center;
 }
 
 .form {
   padding: 20px;
   background-color: rgb(159, 191, 209);
-  width: 400px;
+  width: fit-content;
   border: none;
-  border-radius: 15px;
-  margin: 20px;
+  border-radius: 11px;
+  margin: auto;
 }
 
-.btn {
+.submit {
+  margin-top: 5px;
+  margin-bottom: 5px;
   background-color: rgb(255, 255, 255);
   color: $darkerblue-color;
+  border-radius: 5px;
+  border: none;
   &:hover {
       background-color: $darkerblue-color;
       color:white;
   }
 }
 
+.input {
+  border-radius: 5px;
+  border-color: $text-color;
+  border-width: 2px;
+  width: 350px;
+}
+
 h1 {
   color: $text-color;
+  margin-bottom: 20px;
 }
 
 a {
@@ -38,4 +56,22 @@ a {
   &:hover {
     color:rgb(137, 187, 216);
   }
+}
+
+.links {
+  margin: 40px;
+  font-weight: bold;
+  a {
+    color: rgb(58, 97, 121);
+    &:hover {
+      color:rgb(137, 187, 216);
+    }
+  }
+}
+
+.errors {
+  h3 {
+    color: black;
+  }
+  color: rgb(221, 0, 0);
 }

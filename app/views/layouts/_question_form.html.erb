@@ -1,7 +1,13 @@
 <%= render "layouts/errors", :object => @question %>
 
-<%= form_for [@survey, @question] do |f| %>
-  <%= f.label :question %>
-  <%= f.text_field :question %>
-  <%= f.submit %>
-<% end %>
+<div class="form">
+  <%= form_for [@survey, @question] do |f| %>
+    <%= f.label :question %>
+    <%= f.text_field :question, class: 'input' %>
+    <%= f.submit :Submit, class: 'submit' %>
+  <% end %>
+</div>
+
+<div class="links">
+  <p><%= link_to "Return to survey", survey_path(@survey) %></p>
+</div>

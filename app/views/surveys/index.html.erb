@@ -1,14 +1,15 @@
 <h1>Surveys</h1>
 
 <% if @surveys.any? %>
-  <ul>
+  <%# <ul> %>
     <% @surveys.each do |survey| %>
-      <li><%= link_to survey.title, survey_path(survey) %></li>
+      <p><%= link_to survey.title, survey_path(survey) %></p>
     <% end %>
-  </ul>
+  <%# </ul> %>
 <% else %>
   <p>There are no surveys yet.</p>
 <% end %>
 
-
-<p><%= link_to "Create new survey", new_survey_path %></p>
+<div class="links">
+  <p><%= link_to "Create new survey", new_survey_path %></p>
+</div>

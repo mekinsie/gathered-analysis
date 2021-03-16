@@ -16,7 +16,7 @@ class SurveysController < ApplicationController
     # Code for creating a new survey goes here.
     @survey = Survey.new(survey_params)
     if @survey.save
-      flash[:notice] = "survey successfully added!"
+      flash[:notice] = "Survey successfully added!"
       redirect_to surveys_path
     else
       render :new
@@ -39,7 +39,7 @@ class SurveysController < ApplicationController
     # Code for updating an survey goes here.
     @survey = Survey.find(params[:id])
     if @survey.update(survey_params)
-      flash[:notice] = "survey successfully updated!"
+      flash[:notice] = "Survey successfully updated!"
       redirect_to surveys_path
     else
       render :edit
@@ -50,6 +50,7 @@ class SurveysController < ApplicationController
     # Code for deleting an survey goes here.
     @survey = Survey.find(params[:id])
     @survey.destroy
+    flash[:notice] = "Survey successfully deleted!"
     redirect_to surveys_path
   end
 

@@ -43,6 +43,7 @@ end
 def destroy
   @question = Question.find(params[:id])
   @question.destroy
+  flash[:notice] = "Question successfully deleted!"
   redirect_to survey_path(@question.survey)
 end
 
