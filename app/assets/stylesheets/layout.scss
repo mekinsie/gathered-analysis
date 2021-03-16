@@ -1,0 +1,41 @@
+$darkerblue-color: rgb(101, 161, 196);
+$text-color: rgb(79, 131, 161);
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+body {
+  background: linear-gradient( white, rgb(176, 199, 214)) fixed;
+  background-repeat: no-repeat;
+  font-family: 'Syne Mono', monospace;
+}
+
+.box {
+  margin: 50px;
+}
+
+.form {
+  padding: 20px;
+  background-color: rgb(159, 191, 209);
+  width: 400px;
+  border: none;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.btn {
+  background-color: rgb(255, 255, 255);
+  color: $darkerblue-color;
+  &:hover {
+      background-color: $darkerblue-color;
+      color:white;
+  }
+}
+
+h1 {
+  color: $text-color;
+}
+
+a {
+  color: $text-color;
+  &:hover {
+    color:rgb(137, 187, 216);
+  }
+}

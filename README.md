@@ -27,7 +27,7 @@ This app lets people design surveys. Survey designers may add, update, and delet
 * * *
 ## Schema
 
-<img src="./app/assets/images/schema_survey.PNG">
+<img src="./app/assets/images/schema_survey.PNG" alt="Image of schema.">
 
 * * *
 ## Software Requirements
