@@ -51,7 +51,7 @@ $ code .
 ```
 * Note: VSCode is a code editing software. If you don't already have it, you can download it <a href="https://code.visualstudio.com/">here</a>
 
-4. While located in the root directy, install gem bundler by typing:
+4. While located in the root directory, install gem bundler by typing:
 
 ``` bash
 $ gem install bundler
@@ -78,7 +78,7 @@ $ rake db:migrate
 $ rake db:test:prepare
 ```
 
-The databse should now be correctly set up. And you may start a local server to interact with the project. 
+The database should now be correctly set up. And you may start a local server to interact with the project. 
 
 9. To start a local server, open your default browser and type "localhost:3000" into the search bar and press enter. Here, you will see the live server.
 
